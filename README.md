@@ -17,7 +17,8 @@ If someone attempts to view highscores at the start of the page,
 
 They are met with a proper response.
 
-Once high scores have been listed,
+Once high scores have been listed,  
+
 ![C4-6](https://user-images.githubusercontent.com/82620500/119345484-f2230700-bc66-11eb-9d8a-1cdb0adebd70.png)
 
 They are visible on the bottom portion of the screen.
