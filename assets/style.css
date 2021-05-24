@@ -4,12 +4,12 @@
     padding: 0;
   }
 
-  #questions,
-  #final-score,
-  #high-scores,
-  #correct-wrong {
-    display: none;
-  }
+#questions,
+#final-score,
+#high-scores,
+#correct-wrong {
+display: none;
+}
   
 
 :root {
@@ -171,7 +171,7 @@ div .list-inner {
 
   /* High Score Elements */
 
-  .style-indiv {
+.style-indiv {
     display: flex;
     justify-content: center;
    
@@ -198,8 +198,8 @@ div .list-inner {
 
 footer {
     position: fixed;
-    top: 75%;
-    left: 33%;
+    top: 85%;
+    left: 37%;
     text-align: center;
-    bottom: 3px;
+    bottom: 2px;
 }
