@@ -2,261 +2,204 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  #questions,
+  #final-score,
+  #high-scores,
+  #correct-wrong {
+    display: none;
+  }
+  
+
+:root {
+    --primary: #391287;
+    --secondary: #5b256d;
+  }
+  
+h2 {
+    padding-block: 10px;
 }
 
-header {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(white);
+  color: rgb(0, 0, 0);
+  }
+
+header div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 80px;
-    margin: 35px 0;
-}
+    Margin: 20px 20px;
+    padding: 5px;
+    align-content: center;
+  }
 
+.style-indiv {
+  font-size: .50cm;
+  font-weight: 100;
+  background-color: transparent; 
+  }
+
+
+div .p-style {
+    font-size: .60cm;
+    padding: 0px 50px ;
+    text-align: center;
+  }
+  
+div .p-style-1 {
+    font-size: .50cm;
+    font: 2px;
+    padding: 10px 10px 10px 10px;
+   
+  }
+
+section .wrapper{
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-auto-rows: (10px, auto);
+    grid-gap: .05em; 
+    justify-items: left; 
+  }
+  
+div .style-2{
+    display: grid; 
+    grid-template-rows: 1fr, 2fr;
+    grid-auto-rows: (10px, auto);
+    flex: wrap;
+    justify-content: left;
+    align-content:space-between;
+    padding: 15px 15px 15px 15px;
+  }
+  
+div .style-3{
+      display: grid; 
+      grid-template-rows: 1fr, 2fr;
+      grid-auto-rows: (10px, auto);
+      flex: wrap;
+      justify-content: left;
+      align-content:space-between;
+  }
+  
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    Margin: 20px auto;
+    padding: 10px;
+  }
+  
+div .style-4 {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    max-width: 75%;
+    padding-left: 75px;
+  }
+  
+.style-m {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    width: 225px;
+    border: 1px solid black;
+    font-size: .50cm;
+    padding: 8px;
+    margin: 4px;
+    outline: none;
+  }
+  
+.style-m:active {
+    background-color: var(--secondary);
+    transform: translateY(1px);
+  }
+  
+.list-inner {
+    justify-items: start;
+    }
+    
+div .list-inner {
+  justify-content: start;
+  }
+
+
+  /* Questions */
+
+.questions-ul {
+    list-style-type: none;
+    display: contents;
+  }
+
+.questions-li {
+  width: 220px;
+  }
+
+
+.list-inner {
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-auto-rows: (10px, auto);
+    grid-gap: .05em; 
+    justify-items: center; 
+  }
+
+   /* End of Questions */
+
+  /* Answer Time!! */
+.answer {
+    color: white;
+    width: 225px;
+    border: 1px solid black;
+    font-size: .50cm;
+    padding: 8px;
+    outline: none;
+    text-align: start;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--primary)
+  }
+  
+.answer:active {
+    background-color: var(--secondary);
+    transform: translateY(1px);
+  }
+
+  /* Answer End */
+
+  /* High Score Elements */
+
+  .style-indiv {
+    display: flex;
+    justify-content: center;
+   
+   }
+
+.high-score {
+    font-size: .50cm;
+    border: none;
+    background-color: transparent;
+    padding: 20px; 
+  }
+  
+.score-list {
+    Padding-left: 35px;
+  }
+  
+  /* End of High Score */
+
+  /* Submit & Footer */
+
+.submit-b {
+    height: 25px;
+  }
 
 footer {
     position: fixed;
-    top: 90%;
-    left: 40%;
-    min-height: 100px;
+    top: 75%;
+    left: 33%;
     text-align: center;
-    bottom: 30%;
+    bottom: 3px;
 }
-
-.right {
-    float: right;
-    margin-right: 30px;
-    left: 70%;
-}
-
-.left {
-    float: left;
-}
-
-#nav {
-    display: block;
-    display: inline-block;
-    width: 98vw;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 8px;
- }
-
-h3 {
-    padding: 10px 8px 10px 8px;
-}
-
-:root {
-    --hoverColor:  rgb(134, 31, 182);
-}
-
-    /* Home Page Styles */
-.main-contain {
-    display: grid;
-    grid-template-columns: .5fr  .85fr .5fr;
-    grid-template-rows: .5fr;
-}
-    /* Head title, intro paragraph, and start button */
-.main-t {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2 ;
-    text-align: center;
-    font-size: 50px;
-    margin: 10px 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-p {
-    text-align: center;
-    grid-column: 2 / 3;
-    font-weight: 500;
-    font-size: 25px;
-    margin: 10px 0;
-}
-
-.start-btn {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    text-align: center;
-    padding: 10px 15px;
-    margin: 10px 0;
-    position: fixed;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    color: white;
-    background-color: rgb(75, 18, 151);
-    border: 2px rgb(75, 18, 151);
-    border-radius: 10px;
-}
-
-.start-btn:hover {
-    background-color: var(--hoverColor);
-    border: 2px var(--hoverColor) solid;
-}
-    /*End of Intro */
-
-    /* Questions */
-.question {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    padding: 10px 15px;
-}
-
-    /* End of Questions */
-    
-    /* Answers */
-.answer {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    max-width: 200px;
-    max-height: 50px;
-    text-align: left;
-    padding: 10px 15px;
-    margin: 5px 0;
-    color: white;
-    background-color: purple;
-    border: 2px solid purple;
-    border-radius: 5px;
-}
-
-.answer:hover {
-    background-color: var(--hoverColor);
-    border: 2px solid var(--hoverColor);
-}
-    /* End of Answers */
-
-    /* End Result Score Screen */
-.done-container {
-    display: grid;
-    grid-template-columns: .35fr 1fr .35fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.done-title {
-    grid-column: 2 / 3;
-    margin: 0 0 10px 85px
-}
-.score {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    margin: 5px 0 0 85px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.input-container {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.label {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    text-align: center;
-    position: relative;
-    top: 11px;
-    font-size: 20px;
-    margin-left: 15px;
-}
-
-.score-input {
-    position: relative;
-    top: 5px;
-    grid-column: 2 / 3;
-    max-height: 35px;
-}
-
-.submit-btn {
-    grid-column: 3 / 4;
-    position: relative;
-    top: 5px;
-    max-width: 100px;
-    max-height: 35px;
-    margin: 0 20px;
-    color: white;
-    background-color: purple;
-    border: 2px solid purple;
-    border-radius: 5px;
-}
-
-.submit-btn:hover {
-    background-color: var(--hoverColor);
-    border: 2px solid var(--hoverColor);
-}
-
-/* LEADERBOARDS */
-
-.hs-contain {
-    display: grid;
-    grid-template-columns: .35fr .65fr .35fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.view-hs {
-    position: fixed;
-    left: 100px;
-    top: 66px;
-    color: white;
-    background-color: rgb(75, 18, 151);
-    border: 4px rgb(75, 18, 151);
-    border-radius: 15px;
-    width: 180px;
-    font-size: 18px;
-}
-
-.view-hs:hover {
-    background-color: var(--hoverColor);
-    border: 2px var(--hoverColor) solid;
-}
-
-.leaderboard-score {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    background-color: rgb(253, 206, 253);
-    max-height: 40px;
-    padding: 7px;
-    font-size: 20px;
-}
-
-.leaderboard {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    margin-top: 15px;
-}
-
-.go-back-btn {
-    grid-column: 1 / 2;
-    max-width: 100px;
-    color: white;
-    background-color: purple;
-    border: 2px solid purple;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.go-back-btn:hover {
-    background-color: var(--hoverColor);
-    border: 2px solid var(--hoverColor);
-}
-
-.clear-hScore {
-    grid-column: 2 / 3;
-    max-width: 150px;
-    color: white;
-    background-color: purple;
-    border: 2px solid purple;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.clear-hScore:hover {
-    background-color: var(--hoverColor);
-    border: 2px solid var(--hoverColor);
-}
-
